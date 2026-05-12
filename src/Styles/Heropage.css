@@ -1,0 +1,551 @@
+.heropage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('../assets/wireless.jpg'); */
+  background: radial-gradient(circle at top left, #0f2a0f, #021705);
+  color: #fff;
+  overflow: hidden;
+  position: relative; 
+}
+
+body {
+  background-color: #ffffff;
+}
+
+
+
+/* subtle glowing background effect */
+.heropage::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(59, 246, 65, 0.2);
+  filter: blur(120px);
+  top: -100px;
+  left: -100px;
+  border-radius: 50%;
+} 
+
+.heropage-content {
+  max-width: 900px;
+  text-align: center;
+  z-index: 2;
+  animation: fadeUp 1s ease forwards;
+}
+
+
+.writings h1 {
+  padding-top: 50px;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  animation: slideDown 1s ease;
+}
+
+.writings p {
+  font-size: 18px;
+  opacity: 0.85;
+  line-height: 1.6;
+  animation: fadeIn 1.2s ease;
+}
+
+.heropage-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.heropage-btn button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+
+.btn1 button {
+  background: #26ff00;
+  color: #000;
+}
+
+.btn1 button:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+
+.btn2 button {
+  background: rgb(0, 0, 0);
+  border: 1px solid #a78bfa;
+  color: #ffffff;
+}
+
+.btn2 button:hover {
+  background: #2fff00;
+  transform: translateY(-3px);
+  color: #000;
+}
+
+.heropage-ratings {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  animation: fadeUp 1.5s ease;
+}
+
+.heropage-ratings  {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.heropage-ratings h2 {
+  font-size: 2rem;
+  color: #38bdf8;
+}
+
+.heropage-ratings p {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px;
+  background: linear-gradient(135deg, #f8fbff, #eef5ff);
+}
+
+
+.service1 {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background: #ffffff;
+  padding: 30px 22px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.service1:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: linear-gradient(135deg, #16a34a, #12ff01);
+  box-shadow: 0 18px 35px rgba(34, 197, 94, 0.28);
+}
+
+
+.service1:hover::before {
+  left: 130%;
+} 
+
+
+.service1 span {
+  font-size: 42px;
+  color: #007bff;
+  display: inline-block;
+  margin-bottom: 16px;
+  transition: 0.4s ease;
+}
+
+.service1:hover span {
+  color: #ffffff;
+  transform: scale(1.18);
+}
+
+
+.service1 h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+
+.service1 p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 1.7;
+  transition: 0.3s;
+}
+
+
+.service1:hover h6,.service1:hover p{
+  color: #000000;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.categories-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px;
+}
+
+
+.cat1 {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+
+.cat1:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 35px rgba(0, 123, 255, 0.18);
+}
+
+
+.cat1:hover::before {
+  left: 120%;
+}
+
+
+.cat1 span {
+  font-size: 45px;
+  color: #007bff;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.cat1:hover span {
+  transform:scale(1.15);
+  color: #0056d2;
+}
+
+.cat1 h4 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.info {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+  gap: 30px;
+}
+
+.info p {
+  margin: 0;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info span {
+  color: #44ff00;
+  font-size: 18px;
+}
+
+/* ENTRY ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cat1:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: linear-gradient(135deg, #16a34a, #12ff01);
+  box-shadow: 0 20px 35px rgba(22, 163, 74, 0.25);
+}
+
+.cat1:hover::before {
+  left: 120%;
+}
+
+.header1 {
+  margin: 10px;  
+  display: flex;
+  align-items: center;
+  gap: 45rem;
+
+}
+
+.header1 h1 {
+  padding-left: 10px;
+}
+
+.header-span {
+  color: #000000;
+  margin-top: 20px;
+  padding-left: 48px;
+
+}
+
+.header1 a {
+  font-size: 18px;
+  color: #000000;
+}
+
+
+.header1 a:hover {
+  color:#48ff00;
+}
+
+
+.shop-btn{
+  margin-top: 15px;
+  padding: 12px 22px;
+  border: none;
+  outline: none;
+  background: linear-gradient(135deg,#00c6ff,#0072ff);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s ease;
+ 
+}
+
+.shop-btn:hover{
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,114,255,0.35);
+}
+/* .services-head  {
+  text-align: center;
+  margin: 30px;
+  line-height: 1.6;
+  font-size: 18px;
+} */
+
+.trendhead {
+  display: flex;
+  gap: 50rem;
+  align-items: center;
+}
+
+.trendhead h1 {
+  padding-left: 20px;
+}
+
+.trendhead a {
+  font-size: 18px;
+  color: #000000;
+}
+
+.trendhead a:hover {
+  color:#48ff00;
+
+}
+
+
+.product-card {
+  margin-top: 30px;
+  width: 260px;
+  background: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+
+/* .productbox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+} */
+
+.productbox {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff3b30;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+
+
+.image-box {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .image-box img {
+  transform: scale(1.05);
+}
+
+
+.content {
+  padding: 12px 14px;
+}
+
+
+.category {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+
+.title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+
+.rating {
+  font-size: 13px;
+  color: #f0c14b;
+  margin-bottom: 8px;
+}
+
+.rating span {
+  color: #007185;
+  margin-left: 5px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b12704;
+}
+
+.price span {
+  font-size: 13px;
+  color: #b5bdbd;
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+
+.cart-btn {
+  background: #ffd814;
+  border: none;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+
+
+
+
+ 
+
+
+
+
