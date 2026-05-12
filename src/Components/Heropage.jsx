@@ -24,9 +24,8 @@ import osmo from "../assets/osmo.jpg";
 import drone from "../assets/drone.jpg";
 import earbud from "../assets/earbud.jpg";
 import samsung from "../assets/samsung.jpg";
-import jbl from "../assets/jbl.jpg";
+import jbl from "../assets/JBL.jpg";
 import ScrollToTop from "../Ui/Scrolltop.jsx";
-
 
 const Heropage = () => {
   return (
@@ -319,8 +318,6 @@ const Heropage = () => {
           </div>
         </div>
 
-
-        
         <div className="product-card">
           <span className="badge">HOT</span>
 
@@ -345,8 +342,6 @@ const Heropage = () => {
           </div>
         </div>
 
-
-        
         <div className="product-card">
           <span className="badge">HOT</span>
 
@@ -371,8 +366,6 @@ const Heropage = () => {
           </div>
         </div>
 
-
-        
         <div className="product-card">
           <span className="badge">HOT</span>
 
@@ -397,7 +390,6 @@ const Heropage = () => {
           </div>
         </div>
 
-        
         <div className="product-card">
           <span className="badge">NEW</span>
 
@@ -421,19 +413,12 @@ const Heropage = () => {
             </div>
           </div>
         </div>
-
-
-
       </div>
 
       {/* advert */}
-        <Advert />
-        <ScrollToTop/>
-    
+      <Advert />
+      <ScrollToTop />
 
-
-      
-  
       {/* 
         <div className="services-head">
             <h1>Our Premium Services</h1>
